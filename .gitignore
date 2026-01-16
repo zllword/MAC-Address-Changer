@@ -2,7 +2,6 @@ node_modules
 .claude
 out
 test-output
-tests
 .vscode
 .DS_Store
 .env
@@ -14,8 +13,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 dist
-build
-!build/entitlements.mac.plist
 .idea
 *.iml
 

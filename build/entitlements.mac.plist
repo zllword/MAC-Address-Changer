@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <!-- 允许网络客户端访问 -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+    <!-- 允许网络服务器访问 -->
+    <key>com.apple.security.network.server</key>
+    <true/>
+    <!-- 允许 JIT 编译（Electron 需要） -->
+    <key>com.apple.security.cs.allow-jit</key>
+    <true/>
+    <!-- 允许未签名的可执行内存（Electron 需要） -->
+    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+    <true/>
+    <!-- 禁用库验证（某些 Electron 模块需要） -->
+    <key>com.apple.security.cs.disable-library-validation</key>
+    <true/>
+    <!-- 允许调试器附加 -->
+    <key>com.apple.security.cs.debugger</key>
+    <true/>
+  </dict>
+</plist>
