@@ -1,0 +1,48 @@
+{
+  "name": "windows-mac-address-changer",
+  "version": "1.0.0",
+  "description": "跨平台 MAC 地址修改器 - 支持 Windows 和 macOS",
+  "main": "out/main/index.js",
+  "author": "zllword",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "build:win": "npm run build && electron-builder --win",
+    "build:mac": "npm run build && electron-builder --mac",
+    "build:linux": "npm run build && electron-builder --linux",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:ui": "vitest --ui",
+    "lint": "eslint . --ext .ts,.vue"
+  },
+  "dependencies": {
+    "element-plus": "^2.9.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.5",
+    "@vitejs/plugin-vue": "^5.1.0",
+    "@vitest/coverage-v8": "^4.0.17",
+    "@vitest/ui": "^4.0.17",
+    "@vue/test-utils": "^2.4.6",
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "jsdom": "^27.4.0",
+    "playwright": "^1.49.1",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.11",
+    "vitest": "^4.0.17",
+    "vue": "^3.5.13"
+  }
+}
